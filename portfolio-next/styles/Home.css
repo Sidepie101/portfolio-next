@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+.home-container {
+  background-color: #021828;
+  color: white;
+  padding: 50px;
+  min-height: calc(100vh - 70px);
+  /* Subtract the height of the header */
+  overflow-y: auto;
+}
+
+.hey-text {
+  font-size: 24px;
+  font-family: 'Silkscreen', cursive;
+
+}
+
+.name-text {
+  font-size: 48px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing-animation 5s infinite steps(40);
+  font-family: 'Silkscreen', cursive;
+
+}
+
+.orange-text {
+  color: orange;
+}
+
+.welcome-text {
+  font-size: xx-large;
+  color: orange;
+  margin-top: 20px;
+  /* font-family: 'Handjet', cursive; */
+  /* font-weight: bold; */
+  font-family: 'Silkscreen', cursive;
+}
+
+.info-text {
+  font-size: 16px;
+  color: orange;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-family: 'Silkscreen', cursive;
+  font-weight: bold;
+}
+
+.info-text a {
+  color: black;
+  text-decoration: none;
+
+}
+
+.info-text a.github {
+  color: rgba(255, 255, 255, 0.586);
+}
+
+.info-text a.linkedin {
+  color: rgb(9, 102, 294);
+}
+
+.profile-image {
+  width: auto;
+  height: auto;
+  border-radius: 10%;
+  animation: floating-animation 2.5s infinite;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  margin-left: 70px;
+  background-color: #021d2fd0;
+
+}
+
+
+
+@keyframes floating-animation {
+  0% {
+    transform: rotateY(10deg) translateY(-5px);
+  }
+
+  50% {
+    transform: rotateY(-10deg) translateY(5px);
+  }
+
+  100% {
+    transform: rotateY(10deg) translateY(-5px);
+  }
+}
+
+.description-text p {
+  margin-bottom: 10px;
+}
+
+.material-symbols-outlined {
+  margin-right: 5px;
+}
+
+/* Animation of the welcome text */
+@keyframes typing-animation {
+  0% {
+    width: 0;
+  }
+
+  25% {
+    width: 100%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  75% {
+    width: 0;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+
+
+.typing-cursor {
+  animation: typing-cursor-animation 0.8s steps(1) infinite;
+  color: orange;
+}
+
+@keyframes typing-cursor-animation {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Style for google fonts */
+
+@font-face {
+  font-family: 'Material Icons'; /* This should match the font-family used in the class */
+  /* font-style: normal;
+  font-weight: 400; */
+  src: url('https://fonts.gstatic.com/s/materialicons/v64/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2') format('woff2');
+}
+
+span.material-symbols-outlined {
+  font-family: 'Material Icons';
+
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' -25,
+    'opsz' 20
+}
+
+/* Style for description cards */
+.card {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px 0 rgb(36, 21, 120);
+  transform: scale(1.05);
+}
+
+.frosted-glass{
+  background: rgba( 255, 255, 255, 0.19 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 18.5px );
+-webkit-backdrop-filter: blur( 18.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
