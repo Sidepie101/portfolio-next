@@ -1,13 +1,13 @@
-//import React from 'react';
+'use client'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Pied.css';
-//import GitHubIcon from '@mui/icons-material/GitHub';
-//import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 function Pied() {
   return (
-    <footer className="footer-container bg-dark text-white">
+    <footer className="footer-container text-white">
       <div className="container-fluid d-flex justify-content-between align-items-center footer-content" style={{ height: '80px' }}>
         <div className="me-auto ml-3">
           <p className="lets-connect"> "Let's connect" </p>
@@ -20,7 +20,7 @@ function Pied() {
               rel="noopener noreferrer"
               className="text-white"
             >
-              {/* <LinkedInIcon /> */} LinkedIn
+              <LinkedInIcon /> 
             </a>
           </div>
           <div className="text-white">
@@ -30,7 +30,7 @@ function Pied() {
               rel="noopener noreferrer"
               className="text-white"
             >
-              {/* <GitHubIcon /> */} GIT
+              <GitHubIcon /> 
             </a>
           </div>
         </div>
