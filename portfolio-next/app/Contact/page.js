@@ -108,19 +108,18 @@ alert('Your message has been sent successfully!')    }
                 placeholder="Name"
                 value={state.name}
                 onChange={handleChange}
-                required
+                
               />
               {errors.name && <div className="error-message">{errors.name}</div>}
             </div>
             <div className="form-group">
               <input
-                type="email"
+                type="text"
                 id="email"
                 name="email"
                 placeholder="Email"
                 value={state.email}
                 onChange={handleChange}
-                required
               />
               {errors.email && <div className="error-message">{errors.email}</div>}
             </div>
@@ -142,7 +141,6 @@ alert('Your message has been sent successfully!')    }
                 placeholder="Message"
                 value={state.message}
                 onChange={handleChange}
-                required
               ></textarea>
               {errors.message && <div className="error-message">{errors.message}</div>}
             </div>
@@ -155,4 +153,3 @@ alert('Your message has been sent successfully!')    }
   );
 };
 
-//export default Contact;
